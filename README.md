@@ -1,6 +1,6 @@
 # 午夜列车 · Midnight Express
 
-一款十回合、可重复游玩的中文悬疑推理网页游戏。根据《午夜列车》完整游戏设计文档实现的 1.0 版本。
+一款十回合、可重复游玩的中文悬疑推理 2D 像素网页游戏。当前为完整 2.0 版本：可操控探索、AI 原创案件、动态 NPC、悬疑声场与 ModelScope 原生接入。
 
 ## 特性
 
@@ -18,7 +18,10 @@
 - 实时 Canvas 渲染的车厢、座椅、卧铺、餐桌、窗景、行李与动态人物
 - 靠近 NPC、现场物件和车厢连接门进行空间化调查交互
 - 三阶段“调查员直觉”提示模块，卡关时提供递进式线索
-- 可选 OpenAI-compatible API，用于自由问答及每局原创案件生成
+- 原生适配魔搭 ModelScope API-Inference（`https://api-inference.modelscope.cn/v1`）
+- 自动调用 `/models` 从服务器发现并同步当前可用模型，支持一键连接测试
+- 兼容思考模型的 `reasoning_content`，同时保留其他 OpenAI-compatible 服务
+- AI 用于自由问答及每局原创案件生成
 
 ## 游玩
 
